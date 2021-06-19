@@ -1,13 +1,12 @@
 [package]
 name = "placeholder_closure"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2018"
 license = "CC0-1.0"
 description = "Scala's Placeholder Syntax for Rust."
 repository = "https://github.com/qryxip/placeholder_closure"
 keywords = ["closure", "placeholder-syntax"]
 categories = ["rust-patterns"]
-publish = false
 
 [lib]
 proc-macro = true

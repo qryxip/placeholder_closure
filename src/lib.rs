@@ -12,13 +12,17 @@
 //! The [`λ!`] (or [`lambda!`]) macro replaces 0 or more `$` characters with closure arguments.
 //!
 //! ```
+//! # use placeholder_closure::λ;
 //! let f = λ!($ + 1);
+//! # let _: fn(i32) -> i32 = f;
 //! ```
 //!
 //! will be:
 //!
 //! ```
+//! # use placeholder_closure::λ;
 //! let f = |__0| __0 + 1;
+//! # let _: fn(i32) -> i32 = f;
 //! ```
 //!
 //! ## Constructing `move` closures
