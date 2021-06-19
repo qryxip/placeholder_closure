@@ -34,7 +34,10 @@
 //!
 //! [`λ!`]: ./macro.λ.html
 //! [`lambda!`]: ./macro.lambda.html
+#![forbid(unsafe_code)]
+#![warn(rust_2018_idioms, missing_docs)]
 
+#[allow(unused_extern_crates)]
 extern crate proc_macro;
 
 mod lambda;
